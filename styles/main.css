@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: "Merriweather Sans", Arial, Helvetica, sans-serif;
+}
+h2,h3,h4,h5,h6{
+    font-family: "Archivo Narrow", Arial, Helvetica, sans-serif;
+}
+
+h1::after, h2::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 25px;
+    height: 5px;
+    background-color: #E29330;
+    margin-top: 14px;
+}
+h1, h2{
+    margin-bottom: 40px;
+}    
+.btn-primary, .btn-primary:link, .btn-primary:visited{
+    background-color: #E29330;
+    border:0;
+    border-radius: 16px;
+}
+.btn-primary:hover, .btn-primary:active{
+    background-color: #ce8003;
+}
+
+.bg-primary{
+    background-color: #E29330;
+}
+
+/* Header*/
+body > header, body > footer{
+    background-color: #0670BA;
+}
+
+header .navbar-brand{
+    color: #ffffff;
+}
+
+body > header .nav-link:link, 
+body > header .nav-link:visited {
+    color: #ffffff;
+}
+body > header .nav-link:hover,
+body > header .nav-link:active {
+    color: #EAC89C;
+}
+
+.navbar-brand:link, 
+.navbar-brand:visited {
+    color: #ffffff;
+}
+.navbar-brand:hover,
+.navbar-brand:active {
+    color: #EAC89C;
+}
+
+.navbar-toggler {
+    filter: invert(1);
+}
+
+/* Main */
+main{
+    margin-bottom: 70px;
+}
+
+.progress-skill p{
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+.progress-bar{
+    background-color: #0670BA;
+}
+.skill-html .progress-bar.progress-bar-info{
+    width: 80%;
+}
+.skill-javascript .progress-bar.progress-bar-info{
+    width: 60%;
+}
+.skill-php .progress-bar.progress-bar-info{
+    width: 90%;
+}
+.skill-ajax .progress-bar.progress-bar-info{
+    width: 75%;
+}
+.skill-photoshop .progress-bar.progress-bar-info{
+    width: 60%;
+}
+.skill-illustrator .progress-bar.progress-bar-info{
+    width: 70%;
+}
+.skill-figma .progress-bar.progress-bar-info{
+    width: 80%;
+}
+/*  TODO: develop point on progress bar
+.progress-bar{
+    position: relative;
+}
+.progress-point{
+    position:absolute;
+	margin-top:-10px;
+	z-index:1;
+	height:40px;
+	width:40px;
+	border-radius:25px;
+}
+.skill-html .progress-point{
+    left: 25%;
+}
+
+*/
+
+.card-body i{
+    color: #ce8003;
+}
+
+/* Footer*/
+footer {
+    color: #ffffff;
+}
+
+
+body > footer a:link,
+body > footer a:visited,
+body > footer h3{
+    color: #ffffff;
+}
+
+body > footer a:hover,
+body > footer a:active{
+    color: #edc491;
+}
+
+footer .social a{
+    margin-right: 20px;
+}
+
+
+
+.hero {
+    background: rgb(6,112,186);
+    background: linear-gradient(90deg, rgba(6,112,186,0.5) 0%, rgba(245,246,250,1) 50%, rgba(6,112,186,0.5) 100%);
+}
+
+/* contact us */
+.contact-details i{
+    margin-right: 14px;
+    color: #0670BA;
+    font-size: 1.4rem;
+}
+
+/* mobile*/
+@media (max-width: 767.98px) {
+    header .logo, footer .logo {
+        width: 20px;
+        height: auto; 
+    }
+    .profile-photo {
+        height: 280px;
+        width: auto;
+    }
+    .progress-skill > div > div:nth-child(2){
+        margin-top:40px;
+    }
+    footer p:first-of-type{
+        margin-left: 29px;
+    }
+  }
+/* desktop*/
+@media (min-width: 768px) {
+    header .logo, footer .logo {
+        width: 30px;
+        height: auto; 
+    }  
+    header .navbar-nav li a::after {
+        content: '|';
+        padding-left: 1em;
+    }
+    header .navbar-nav li:last-child a::after {
+        content: '';
+    }  
+    .profile-photo {
+        height: 400px;
+        width: auto;
+    }
+    footer p:first-of-type{
+        margin-left: 37px;
+    }
+}
