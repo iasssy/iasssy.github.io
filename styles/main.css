@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 *{
     font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+    background-color: #1f1f1f;
+    color: white;
 }
 h1{
-    font-family: "Merriweather Sans", Arial, Helvetica, sans-serif;
+    font-family: "Kameron", Arial, Helvetica, sans-serif;
 }
 h2,h3,h4,h5,h6{
-    font-family: "Archivo Narrow", Arial, Helvetica, sans-serif;
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
 }
 
 h1::after, h2::after {
@@ -26,7 +29,7 @@ h1, h2{
 .btn-primary, .btn-primary:link, .btn-primary:visited{
     background-color: #E29330;
     border:0;
-    border-radius: 16px;
+    color: #000;
 }
 .btn-primary:hover, .btn-primary:active{
     background-color: #ce8003;
@@ -36,10 +39,9 @@ h1, h2{
     background-color: #E29330;
 }
 
-/* Header*/
-body > header, body > footer{
-    background-color: #0670BA;
-}
+.text-accent{
+    color: #E29330; 
+ }
 
 header .navbar-brand{
     color: #ffffff;
@@ -69,54 +71,9 @@ body > header .nav-link:active {
 
 /* Main */
 main{
-    margin-bottom: 70px;
+    padding-bottom: 70px;
 }
 
-.progress-skill p{
-    margin-bottom: 5px;
-    margin-top: 20px;
-}
-.progress-bar{
-    background-color: #0670BA;
-}
-.skill-html .progress-bar.progress-bar-info{
-    width: 80%;
-}
-.skill-javascript .progress-bar.progress-bar-info{
-    width: 60%;
-}
-.skill-php .progress-bar.progress-bar-info{
-    width: 90%;
-}
-.skill-ajax .progress-bar.progress-bar-info{
-    width: 75%;
-}
-.skill-photoshop .progress-bar.progress-bar-info{
-    width: 60%;
-}
-.skill-illustrator .progress-bar.progress-bar-info{
-    width: 70%;
-}
-.skill-figma .progress-bar.progress-bar-info{
-    width: 80%;
-}
-/*  TODO: develop point on progress bar
-.progress-bar{
-    position: relative;
-}
-.progress-point{
-    position:absolute;
-	margin-top:-10px;
-	z-index:1;
-	height:40px;
-	width:40px;
-	border-radius:25px;
-}
-.skill-html .progress-point{
-    left: 25%;
-}
-
-*/
 
 .card-body i{
     color: #ce8003;
@@ -144,17 +101,57 @@ footer .social a{
 }
 
 
-
-.hero {
-    background: rgb(6,112,186);
-    background: linear-gradient(90deg, rgba(6,112,186,0.5) 0%, rgba(245,246,250,1) 50%, rgba(6,112,186,0.5) 100%);
-}
-
 /* contact us */
 .contact-details i{
     margin-right: 14px;
     color: #0670BA;
     font-size: 1.4rem;
+}
+
+
+/* SLIDER 
+
+.slick-prev {
+    left: 15px;
+    z-index: 10;
+}
+.slick-next{
+    right: 15px;
+    z-index: 10;
+}
+.slick-next:before, .slick-prev:before {
+    color: #F3CA52;
+}
+*/
+
+.slickSlider .slick-next:before{
+    display: none;
+}
+.slickSlider div{
+    position: relative;
+}
+/* Add spacing between slides */
+.slickSlider { 
+    overflow: hidden; 
+    margin-top: 30px;
+}
+
+.slickSlider button{
+    min-width: 100px;
+}
+
+@media (max-width:767px){
+    .slickSlider article{
+        background-color: rgba(10, 104, 71, .8);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: #F6E9B2;
+    }
+    .slickSlider article h2{
+        color: #F6E9B2;
+    }
+    
 }
 
 /* mobile*/
@@ -163,13 +160,7 @@ footer .social a{
         width: 20px;
         height: auto; 
     }
-    .profile-photo {
-        height: 280px;
-        width: auto;
-    }
-    .progress-skill > div > div:nth-child(2){
-        margin-top:40px;
-    }
+   
     footer p:first-of-type{
         margin-left: 29px;
     }
@@ -187,10 +178,6 @@ footer .social a{
     header .navbar-nav li:last-child a::after {
         content: '';
     }  
-    .profile-photo {
-        height: 400px;
-        width: auto;
-    }
     footer p:first-of-type{
         margin-left: 37px;
     }
