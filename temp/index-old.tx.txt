@@ -35,39 +35,33 @@
       <div class="container-fluid hero mt-0 pt-5 pb-5">
         <div class="container">
           <div class="row d-flex align-items-center">
-            <!-- Left Column -->
-            <div class="col-12 col-md-5 pt-5 text-md-start">
-              <h1 class="fs-3 fs-md-1">Iana SETRAKOVA</h1>
-              <h5 class="mt-3 mt-md-5 mb-3 mb-md-4">Full-stack developer</h5>
-              <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-start">
-                <a
-                  class="btn btn-primary btn-lg my-2 px-4 gap-3 me-2"
-                  href="index.html#contacts"
-                  >Get in touch</a
-                >
-                <a
-                  class="btn btn-secondary btn-lg p-2 my-2"
-                  href="documents/Iana-Setrakova.pdf"
-                  target="_blank"
-                  >View CV</a
-                >
-              </div>
+            <div class="col-5 pt-5">
+              <h1>Iana SETRAKOVA</h1>
+              <h5 class="mt-5 mb-4">Full-stack developer</h5>
+              <a
+                class="btn btn-primary btn-lg p-2 me-3"
+                href="contacts.html"
+                >Get in touch</a
+              >
+              <a
+                class="btn btn-secondary btn-lg p-2"
+                href="documents/Iana-Setrakova.pdf" target="_blank"
+                >View CV</a
+              >
             </div>
-            <!-- Right Column -->
-            <div class="col-12 col-md-7 ">
+            <div class="col-7">
               <img
-                class="profile-photo rounded-circle mt-4 mt-md-0 border border-end-0 border-bottom-0"
+                class="profile-photo rounded-circle m-2 mb-2 border border-end-0 border-bottom-0"
                 src="images/iana-9.png"
-                width="250"
+                width="300"
                 alt="profile photo"
               />
             </div>
           </div>
         </div>
       </div>
-      
-      <div class="container mx-2 mx-md-5 mt-5 mb-4">
-        <article id="about">
+      <div class="container mt-5 mb-4">
+        <article id="about pt-5">
           <h2>About</h2>
           <p>
             Full Stack Developer, focused on building reliable and efficient
@@ -80,7 +74,7 @@
         </article>
       </div>
 
-      <div class="container mx-2 mx-md-5 mt-4 mb-5">
+      <div class="container mt-4 mb-5">
         <div class="row">
           <div>
             <div class="slickSlider flex overflow-hidden">
@@ -163,30 +157,12 @@
 
 
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <a href="portfolio.html#projects" type="button" class="btn btn-primary btn-lg my-2 px-4 gap-3 me-2">Projects</a>
-              <a href="portfolio.html#websites" type="button" class="btn btn-outline-secondary btn-lg my-2 px-4">Relevant works</a>
+              <a href="portfolio.html#projects" type="button" class="btn btn-primary btn-lg px-4 gap-3">Projects</a>
+              <a href="portfolio.html#websites" type="button" class="btn btn-outline-secondary btn-lg px-4">Relevant works</a>
             </div>
           </div>
         </div>
       </div>
-
-
-      <div class="container py-4 mx-2 mx-md-5">
-        <div id="contacts" class="row mt-5">
-          <div class="col-md-4 col-sm-12 col-12 offset-md-2 pt-5"> 
-            <h2>Contact details</h2> 
-            <p class="mt-5">Looking forward to hearing from you</p>
-            <div class="contact-details">
-              <i class="bi bi-envelope-at"></i><span>ia.setrakova@gmail.com</span><br><br>
-            </div>           
-          </div>
-          <div class="col-md-4 col-sm-12">            
-            <img
-            class="img-fluid rounded border border-end-0 border-bottom-0"
-            src="images/lamtop-java.png"
-            width="300"
-            alt="profile photo"
-          />
       
 
       
